@@ -1,0 +1,38 @@
+{
+  "name": "node-jwt",
+  "version": "1.0.0",
+  "description": "Node and Express JWT integration",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarunsaini85/node-jwt.git"
+  },
+  "keywords": [
+    "Node",
+    "Express",
+    "JWT"
+  ],
+  "author": "Tarunjeet Saini",
+  "license": "MIT License",
+  "bugs": {
+    "url": "https://github.com/tarunsaini85/node-jwt/issues"
+  },
+  "homepage": "https://github.com/tarunsaini85/node-jwt#readme",
+  "dependencies": {
+    "@google-cloud/secret-manager": "^5.6.0",
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.4"
+  },
+  "devDependencies": {
+    "connect-livereload": "^0.6.1",
+    "livereload": "^0.9.3",
+    "nodemon": "^3.1.7"
+  }
+}
