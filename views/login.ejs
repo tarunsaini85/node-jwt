@@ -1,0 +1,19 @@
+<%- include('partials/header.ejs') %>
+<div id="login-form-container" class="d-flex justify-content-center align-items-center vh-100">
+    <form id="login-form" class="w-50 p-4 rounded shadow">
+        <h2 class="text-center mb-4">Login</h2>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            <div id="email-error" class="error text-danger mt-2" style="display: none;"></div>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+            <div id="password-error" class="error text-danger mt-2" style="display: none;"></div>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+    </form>
+</div>
+<script src="/js/login.js"></script>
+<%- include('partials/footer.ejs') %>

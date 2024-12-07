@@ -1,0 +1,32 @@
+<%- include('partials/header.ejs') %>
+<div id="signup-success-toast" class="toast align-items-center text-white bg-success border-0 position-fixed top-50 start-50 translate-middle p-3" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+        <div class="toast-body">
+            Sign up successful! Taking you to the home page...
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+</div>
+<div id="signup-form-container" class="d-flex justify-content-center align-items-center vh-100">
+    <form id="signup-form" class="w-50 p-4 rounded shadow">
+        <h2 class="text-center mb-4">Sign Up</h2>
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            <div id="name-error" class="error text-danger mt-2" style="display: none;"></div>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            <div id="email-error" class="error text-danger mt-2" style="display: none;"></div>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+            <div id="password-error" class="error text-danger mt-2" style="display: none;"></div>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+    </form>
+</div>
+<script src="/js/signup.js" defer></script>
+<%- include('partials/footer.ejs') %>

@@ -4,7 +4,11 @@
   "description": "Node and Express JWT integration",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "envGenProd": "NODE_ENV=prod node initEnv.js",
+    "envGenDev": "NODE_ENV=dev node initEnv.js",
+    "dev": "nodemon -w . -e js,ejs,css -x 'node app.js'",
+    "start": "nodemon -w . -e js,ejs,css -x 'npm run envGenProd && node app.js'"
   },
   "repository": {
     "type": "git",
@@ -28,7 +32,9 @@
     "ejs": "^3.1.10",
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.8.4"
+    "mongoose": "^8.8.4",
+    "validator": "^13.12.0",
+    "dotenv": "^16.4.7"
   },
   "devDependencies": {
     "connect-livereload": "^0.6.1",
